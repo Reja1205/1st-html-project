@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+  <form action="">
+    <div>
+        <label for="FirstName">First Name: </label>
+        <br>
+    <input type="text" name="FirstName" id="FirstName" placeholder="Enter your firstname" autofocus/>
+    </div>
+    <div>
+        <label>Last Name:</label>
+        <br>
+        <input type="text" id="lastname" placeholder="Enter your last name"/>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" placeholder="Enter your password"/>
+    </div>
+    <div>
+        <label for="Decade">Decade</label>
+        <br>
+        <input type="number" id="number" min="1900" max="2024" value="2000" step="10"/>
+    </div>
+    <div>
+        <label for="favouritegames">Favourite Games:</label>
+        <select name="favouritegames" id="favouritegames">
+            <optgroup label="Outdoor Games">
+                <option value="FootBall">FootBall</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Hiking">Hiking</option>
+            </optgroup>
+            <optgroup label="Indoor Games">
+                <option value="carum">Carrom</option>
+                <option value="Chess">Card</option>
+                <option value="swiming">Chess</option>
+            </optgroup>
+         </select>
+    </div>
+    <div>
+        <label for="beverages">Favourite Beverages</label>
+        <input type="text" name="beverages" id="beverages"
+        list="beverages-list"/>
+        <datalist id="beverages-list">
+            <option value="Tea"></option>
+            <option value="Coffee"></option>
+            <option value="Milk shake"></option>
+            <option value=" Bubble Tea"></option>
+            <option value=" Mango Tea"></option>
+
+
+        </datalist>
+        <hr>
+        <section>
+            <legend>What is your favorite programming languge?</legend>
+            <div>
+                <input type="radio" name="python" id="python" value="python"/>
+                <lebel>Python</lebel>
+            </div>
+            <div>
+                <input type="radio" name="java" id="java" value="java"/>
+                <lebel>Java</lebel>
+            </div>
+            <div>
+                <input type="radio" name="ruby" id="ruby" value="ruby"/>
+                <lebel>Ruby</lebel>
+            </div>
+            <div>
+                <input type="radio" name="html" id="html" value="html"/>
+                <lebel>HTML</lebel>
+            </div>
+        </section>
+ </div>
+  </form>  
+</body>
+</html>
